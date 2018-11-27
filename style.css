@@ -153,49 +153,12 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(img/intro-bg-mobile.jpg) no-repeat bottom center fixed;
   background-color: ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
-#events {
-	background: url(img/events-bg.jpg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.scroller {
-	margin-top: 450px;
-	vertical-align: bottom;
-}
-
-#faqs {
-	background: url(img/faqs-bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#lodging {
-	background: url(img/lodging-bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#registry {
-	background: url(img/registry-bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .slide .slide-body {
@@ -207,12 +170,27 @@ a:focus {
 }
 
 .slide .slide-body .brand-heading {
+	margin-top: 120px;
   font-size: 40px;
 }
 
 .slide .slide-body .slide-text {
   font-size: 18px;
   font-weight: 200;
+}
+
+#lodging .doubletree {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+	.row.pull-right {
+		float: none !important;
+	}
+
+	.row.pull-left {
+		float: none !important;
+	}
 }
 
 @media(min-width:767px) {
@@ -222,12 +200,88 @@ a:focus {
   }
 
   .slide .slide-body .brand-heading {
+  	margin-top: 0;
     font-size: 80px;
   }
 
   .slide .slide-body .slide-text {
     font-size: 25px;
   }
+
+	.scroller {
+		margin-top: 450px;
+		vertical-align: bottom;
+	}
+
+  #intro {
+  	background: url(img/intro-bg.jpg) no-repeat bottom center scroll;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+  }
+
+	#events {
+		background: url(img/events-bg.jpg) no-repeat bottom center scroll;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	}
+
+	#events .blurb {
+		width: 500px;
+	}
+
+	#faqs {
+		background: url(img/faqs-bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+	#faqs .blurb {
+		width: 500px;
+		height: 300px;
+		overflow-y: scroll;
+	}
+
+	#lodging {
+		background: url(img/lodging-bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+	#lodging .doubletree {
+		float: left;
+		margin-bottom: 0;
+	}
+
+	#lodging .hollywood {
+		float: right;
+	}
+
+	#registry {
+		background: url(img/registry-bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
+	#lodging .blurb {
+		width: 700px;
+		height: 500px;
+		overflow-y: scroll;
+		padding-bottom: 30px;
+	}
+
+	#registry .blurb {
+		width: 350px;
+	}
 }
 
 .btn-circle {
