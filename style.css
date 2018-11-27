@@ -9,6 +9,22 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 100%;
+  height: 100%;
+  z-index: -10;
+	background: url(img/intro-bg-mobile.jpg) no-repeat bottom center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -153,12 +169,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(img/intro-bg-mobile.jpg) no-repeat bottom center fixed;
   background-color: ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
 .slide .slide-body {
@@ -190,6 +201,10 @@ a:focus {
 
 	.row.pull-left {
 		float: none !important;
+	}
+
+	.scroller {
+		display: none;
 	}
 }
 
