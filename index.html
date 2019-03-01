@@ -92,14 +92,14 @@
 									<tr>
 										<td>June 6<sup>th</sup></td>
 										<td>6pm-9pm</td>
-										<td>Welcome Cocktails</td>
+										<td class="cursor-pointer event-info" data-toggle="modal" data-target="#cocktailsmodal">Welcome Cocktails</td>
 										<td><a href="http://katieandpeterrsvp.minted.us/rsvp" target="_blank">RSVP</a></td>
 									</tr>
 
 									<tr>
 										<td>June 7<sup>th</sup></td>
 										<td>6:30pm</td>
-										<td>Rehearsal Dinner</td>
+										<td class="cursor-pointer event-info" data-toggle="modal" data-target="#rehearsalmodal">Rehearsal Dinner</td>
 										<td><a href="http://katieandpeterrsvp.minted.us/rsvp" target="_blank">RSVP</a></td>
 									</tr>
 
@@ -325,9 +325,74 @@
 		<!-- Footer -->
 		<footer>
 			<div class="container text-center">
-				<p>Copyright &copy; 2018</p>
+				<p>Copyright &copy; 2018-2019</p>
 			</div>
 		</footer>
+
+		<div id="cocktailsmodal" class="modal fade" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Welcome Cocktails
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button></h5>
+		      </div>
+		      <div class="modal-body">
+	      		<h6>Location</h6>
+	      		<p>
+		      		Liberty's Bar &amp; Bottle<br>
+		      		<a href="http://maps.apple.com/place?address=1427%20Main%20St.%20Cincinnati,%20OH%2045202" target="_blank">
+		      			1427 Main St.<br>
+			      		Cincinnati, OH 45202
+			      	</a>
+			      </p>
+
+			      <h6>Details</h6>
+			      <p>
+		      		Please join us at our favorite bar for welcome happy hour.
+		      		We ask that only adults attend this happy hour.<br><br>
+		      		<b>Note:</b> Food will not be served at this event and it will be a cash bar.
+		      	</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="rehearsalmodal" class="modal fade" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Rehearsal Dinner
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button></h5>
+		      </div>
+		      <div class="modal-body">
+	      		<h6>Location</h6>
+	      		<p>
+	      			Reckman Farm<br>
+	      			<a href="https://maps.apple.com/place?address=20364%20Schaefer%20Rd" target="_blank">20364 Schaefer Rd<br />
+							Sunman, IN 47041</a>
+						</p>
+
+						<h6>Details</h6>
+						<p>
+		      		Please join us for our rehearsal dinner.
+		      		Bavarian Tracht (Lederhosen, Dirndls, Bier hat, etc.) is encouraged for all who have it.
+		      		Please bring your own bier stein (we will have some on hand for those flying).
+		      	</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 
 		 <!-- jQuery Version 1.11.0 -->
 		<script src="js/jquery.js"></script>
