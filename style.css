@@ -98,7 +98,6 @@ a:focus {
 
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255,255,255,.3);
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: ;
@@ -127,6 +126,15 @@ a:focus {
   color: #fff;
 }
 
+.navbar-custom {
+	background: #333;
+	text-align: center;
+}
+
+.navbar-custom li {
+	display: inline-block;
+}
+
 .navbar-custom .nav li.active {
   outline: none;
   background-color: rgba(255,255,255,.3);
@@ -151,18 +159,10 @@ a:focus {
     border-bottom: 0;
     letter-spacing: 1px;
     background: 0 0;
+    opacity: 1;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  .top-nav-collapse {
-    padding: 0;
-    background-color: ;
-  }
-
-  .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid rgba(255,255,255,.3);
   }
 }
 
@@ -185,17 +185,16 @@ a:focus {
 }
 
 .slide .slide-body .brand-heading {
-	margin-top: 120px;
-  font-size: 40px;
+	margin-top: 40%;
+	margin-bottom: 15px;
+	text-align: right;
+  font-size: 20px;
 }
 
 .slide .slide-body .slide-text {
   font-size: 18px;
+  text-align: right;
   font-weight: 200;
-}
-
-#lodging .doubletree {
-	margin-bottom: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -220,11 +219,13 @@ a:focus {
 
   .slide .slide-body .brand-heading {
   	margin-top: 0;
-    font-size: 80px;
+  	text-align: center;
+    font-size: 60px;
   }
 
   .slide .slide-body .slide-text {
     font-size: 25px;
+    text-align: center;
   }
 
 	.scroller {
@@ -239,108 +240,6 @@ a:focus {
 	  background-size: cover;
 	  -o-background-size: cover;
   }
-
-	#events {
-		background: url(img/events-bg.jpg) no-repeat bottom center scroll;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  background-size: cover;
-	  -o-background-size: cover;
-	}
-
-	#events .blurb {
-		width: 500px;
-	}
-
-	#faqs {
-		background: url(img/faqs-bg.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	}
-
-	#faqs .blurb {
-		width: 500px;
-		height: 300px;
-		overflow-y: scroll;
-	}
-
-	#lodging {
-		background: url(img/lodging-bg.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	}
-
-	#lodging .doubletree {
-		float: left;
-		margin-bottom: 0;
-	}
-
-	#lodging .hollywood {
-		float: right;
-	}
-
-	#registry {
-		background: url(img/registry-bg.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	}
-
-	#lodging .blurb {
-		width: 700px;
-		height: 500px;
-		overflow-y: scroll;
-		padding-bottom: 30px;
-	}
-
-	#registry .blurb {
-		width: 350px;
-	}
-}
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {
@@ -379,10 +278,6 @@ a:focus {
 
 .content-section {
   padding-top: 100px;
-}
-
-#lodging .content-section {
-	padding-top: 80px;
 }
 
 .content-section .row {
